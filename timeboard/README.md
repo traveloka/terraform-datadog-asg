@@ -10,7 +10,7 @@ Usage
 
 ```hcl
 module "timeboard_asg_beical-asg" {
-  source          = "github.com/traveloka/terraform-datadog-asg.git?//timeboard"
+  source          = "github.com/traveloka/terraform-datadog-asg//timeboard"
   product_domain  = "BEI"
   asg_name        = "beical-asg"
 }
@@ -19,8 +19,8 @@ module "timeboard_asg_beical-asg" {
 Terraform Version
 -----------------
 
-This module was created using Terraform 0.11.5. 
-So to be more safe, Terraform version 0.11.5 or newer is required to use this module.
+This module was created using Terraform 0.11.7. 
+So to be more safe, Terraform version 0.11.7 or newer is required to use this module.
 
 Authors
 -------
