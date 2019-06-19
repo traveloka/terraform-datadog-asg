@@ -3,7 +3,7 @@ locals {
 }
 
 resource "datadog_timeboard" "asg" {
-  count = "${var.enabled}"
+  count = "${var.enabled ? 1 : 0}"
 
   title       = "${var.product_domain} - ${var.cluster} - ${var.environment} - ASG"
   description = "A generated timeboard for ASG"
